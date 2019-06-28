@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+.banner {
+    position:relative;
+    top:80px;
+    background-color: rgba(50, 75, 92, 0.733);
+}
+
+
+.banner img {
+    width:100%;
+    position: relative;
+    z-index: -25;
+    display:block;
+}
+
+.descrip {
+    width:80%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%)  translateY(-50%);
+}
+
+.descrip p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color:#eee;
+    padding:10px;
+}
+
+.descrip span {
+    font-family:'Arvo', serif;
+    font-size: 35px;
+    text-decoration: bold #fff;
+}
+
+@media (min-width:400px) {
+    .descrip p {
+        width:auto;
+        height:auto;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .banner img {
+        height: 600px;
+    }
+
+    .descrip {
+        width:60%;
+    }
+    .descrip p {
+        font-size: 35px;
+        width:auto;
+        height:auto;
+    }
+
+    .descrip span {
+        font-size: 50px;
+    }
+
+}
+
+/***********subanner*************/
+
+#subanner {
+    width:100%;
+    min-height: 360px;
+    background-color: #444;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom:35px;
+    text-align: center;
+    color:#fff;
+}
+
+#subanner h2 {
+    font-size: 30px;
+}
+
+#subanner .subanner {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.subanner img {
+    width:210px;
+    height: 210px;
+    margin-top: 50px;
+    margin-right: 20px;
+    border-radius:50%;
+    border: 5px solid #eee;
+}
+
+
+@media (min-width: 1024px) {
+    #subanner {
+        height: auto;
+    }
+}

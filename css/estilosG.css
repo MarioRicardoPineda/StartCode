@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+/***************Header, NAV*************/
+
+header {
+    width:100%;
+    height: 80px;
+    background-color: #ddd;
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+
+header img {
+    position: absolute;
+    margin-left:25px ;
+    padding-top:5px;
+    width:150px;
+    height: 70px;
+
+}
+
+
+label {
+    font-size: 35px;
+    display:table;
+    padding-top:20px;
+    float: right;
+    cursor: pointer;
+}
+label:hover {
+    color:#888;
+    transition: .3s;
+}
+input {
+    display:none;
+}
+
+.menu {
+    position: absolute;
+    top:80px;
+    width:100%;
+    height: 100vh;
+    background-color: rgba(220, 220, 220, .8);
+    transform:translateX(-100%);
+    transition: .5s;
+}
+
+ul{
+    list-style: none;
+
+}
+
+ul li {
+    margin:25px 0;
+    border-bottom:1.5px solid #000;
+    cursor:pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color:#000;
+    font-size: 20px;
+    padding: 0px 15px;
+
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        transform: translateX(0);
+        width:auto;
+        height: auto;
+        margin-right: 35px;
+}
+
+        .menu ul {
+            float: right;
+            display: flex;
+
+        }
+        
+        .menu li {
+            border:none;
+        }
+
+        .menu a {
+            padding: 0;
+            color:#222;
+            margin-right: 15px;
+            margin-left: 15px;
+
+        }
+        .menu a:hover {
+            border-bottom: 2px solid #222;
+        }
+
+        header label {
+            display: none;
+        }
+}
+
+/**************submenu*************/
+
+/*.menu li {
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+}
+
+.menu a {
+    transition: .4s;
+}
+
+/************continnue**************/
+
+
+/************bienvenido************/
+.bienvenido {
+    width:90%;
+    margin:auto;
+    margin-top:100px;
+}
+
+.des {
+    width:100%;
+    padding: 15px;
+}
+
+.des p {
+    font-size: 20px;
+    font-family:Arial;
+    margin-top:15px;
+    text-align: justify;
+}
+
+.des h2 {
+    font-family: 'Anton';
+    text-align: center;
+    font-size: 30px; 
+}
+
+@media (min-width:1024px) {
+    .bienvenido {
+        width:70%;
+    }
+}
+
+/***********El Bitcoin*************/
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:40px;
+}
+
+.bit {
+    width: 100%;
+    margin:12px;
+    padding: 15px;
+    border: 4px solid #ccc;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 4px #555;
+}
+.bit p {
+    font-family:arial;
+    font-size: 20px;
+}
+
+.bit h2 {
+    font-family:'Anton', sans-serif;
+    margin-bottom:15px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.bit img {
+    width:100%;
+    margin-bottom:25px;
+}
+
+@media (min-width: 1024px) {
+    .bit {
+        width:31%;
+    }
+}
+
+/*********footer***********/
+
+footer .contenedor {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center
+
+}
+
+.redes {
+    width:100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #444;
+}
+
+.copy {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.redes {
+    font-size: 35px;
+}
